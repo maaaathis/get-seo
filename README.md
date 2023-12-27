@@ -1,13 +1,12 @@
 # get-seo
-This npm package provides a simple implementation for getting the seo title and description of a website.
 
+This npm package provides a simple implementation for getting the seo title and description of a website.
 
 ## Installation
 
 ```shell
 npm i get-seo
 ```
-
 
 ## Example usage
 
@@ -22,7 +21,6 @@ const title = await seoGetter.getTitle();
 const description = await seoGetter.getDescription();
 
 // ...
-
 ```
 
 ## License
