@@ -1,11 +1,16 @@
 import { JSDOM } from 'jsdom';
 import fetch from 'node-fetch';
+import isUrl from 'is-url';
 
 export class getSEO {
   private readonly url: string;
   private html: string | null = null;
 
   constructor(url: string) {
+    if (!isUrl(url)) {
+      throw new Error('Invalid url');
+    }
+
     this.url = url;
   }
 
