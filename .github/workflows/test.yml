@@ -21,13 +21,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: pnpm
+          cache: yarn
 
       - name: Install Dependencies
-        run: pnpm install --immutable
+        run: yarn install --immutable
 
       - name: Run Tests
-        run: pnpm run test:format
+        run: yarn run test:format
 
   function:
     name: Function
@@ -41,10 +41,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: pnpm
+          cache: yarn
 
       - name: Install Dependencies
-        run: pnpm install --immutable
+        run: yarn install --immutable
 
       - name: Run Tests
-        run: pnpm run test:function
+        run: yarn run test:function
