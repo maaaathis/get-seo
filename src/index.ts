@@ -1,0 +1,1 @@
+export { getSEO } from './getSEO';
