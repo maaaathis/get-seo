@@ -38,7 +38,7 @@ export class getSEO {
     }
 
     const document = this.parseHtml();
-    const title = document.querySelector('head title')?.textContent || '';
+    const title = document.querySelector('head title')?.textContent ?? '';
     return title;
   }
 
@@ -51,7 +51,7 @@ export class getSEO {
     const description =
       document
         .querySelector('meta[name="description"]')
-        ?.getAttribute('content') || '';
+        ?.getAttribute('content') ?? '';
     return description;
   }
 }
