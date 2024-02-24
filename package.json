@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "is-url": "^1.2.4",
-    "jsdom": "^23.0.1",
+    "jsdom": "^24.0.0",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
